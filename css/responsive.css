@@ -1,0 +1,127 @@
+/* mobile size */
+@media (max-width:425px){
+    .service-card-active h6::before{
+        content: '';
+        position: absolute;
+        left: 63%;
+        bottom: -1px;
+        width: 2rem;
+        height: 2px;
+        background: var(--white);
+        transform: translateX(-50px);
+    }
+    .service-card h6::before{
+        content: '';
+        position: absolute;
+        left: 63% !important;
+        bottom: -1px;
+        width: 2rem;
+        height: 2px;
+        background: var(--primary);
+        transform: translateX(-50px);
+    }
+    /* potfolio */
+    .portfolio-img img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* footer */
+    
+    .footer-menu ul li{
+        font-size: .8rem;
+        margin-right: 1rem;
+    }
+
+    .footer-icon a img{
+        margin-bottom: 1rem;
+    }
+    .copyright p{
+        font-size: .8rem;
+    }
+    /* footer end */
+}
+
+/* tablet */
+
+@media (max-width: 768px) {
+    section#banner{
+        background-image: none;
+    }
+    .banner-content{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-top: 5rem;
+    }
+    /* service */
+    .service-card h6::before{
+        content: '';
+        position: absolute;
+        left: 55%;
+        bottom: -1px;
+        width: 2rem;
+        height: 2px;
+        background: var(--primary);
+        transform: translateX(-50px);
+    }
+    .service-card-active h6::before{
+        content: '';
+        position: absolute;
+        left: 55%;
+        bottom: -1px;
+        width: 2rem;
+        height: 2px;
+        background: var(--white);
+        transform: translateX(-50px);
+    }
+    /* call-to-action  */
+    #call-to-action {
+        text-align: center;
+    }
+    #call-to-action br{
+        display: none;
+    }
+    /* call-to-action end  */
+
+    /* testimonials  */
+
+    #testimonials p{
+        font-size: .7rem;
+    }
+    #testimonials p br{
+        display: none;
+    }
+
+    /* testimonials end  */
+
+    /* footer */
+
+    .footer-menu-wrapper{
+        text-align: center !important;
+    }
+    .footer-search-wrapper{
+        text-align: center !important;
+    }
+    .footer-search{
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+    /* footer end */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

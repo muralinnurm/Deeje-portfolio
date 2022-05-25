@@ -1,0 +1,331 @@
+/* =====================Custom css===================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* colors */
+:root{
+    --primary: #1769ff;
+    --black: #000000;
+    --black-lt:#333333;
+    --white: #ffffff;
+    --light: #eff2f1;
+}
+/* colors end */
+
+.btn-primary{
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: .7rem 2rem;
+    border-radius: 2rem;
+    transition: all .4s;
+}
+.btn-primary:hover{
+    background-color: var(--primary);
+    color: var(--white);
+}
+.btn-secondary{
+    background: var(--primary);
+    color: var(--white);
+    padding: .7rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 1px 1px 10px #1768ff5a;
+    transition: all .4s;
+}
+.btn-secondary:hover{
+    background: var(--black-lt);
+}
+
+p{
+    font-size: .7rem;
+    line-height: 1.5rem;
+    color: var(--black-lt);
+}
+.section-heading{
+    text-transform: uppercase;
+    letter-spacing: .8rem;
+    font-weight: 300;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--primary);
+    border-radius: 1rem;
+}
+
+/* scrollbar end */
+
+/* =====================Custom css end===================== */
+
+
+
+/* =====================Banner===================== */
+nav.navbar{
+    padding: 3rem 0;
+}
+nav .navbar-brand img{
+    width: 12rem;
+}
+nav .nav-item a{
+    color: var(--black);
+}
+nav .nav-item{
+    margin: 0 1.5rem;
+    line-height: 2rem;
+}
+nav .nav-item a:hover{
+    color: var(--black);
+}
+
+section#banner{
+    background: url(../img/banner.png) no-repeat left, var(--light);
+    height: 98vh;
+    background-size: 50rem;
+    background-position-y: 8rem;
+}
+.banner-content{
+    padding-top: 7rem;
+    padding-left: 4rem;
+}
+.banner-content h4{
+    font-weight: 200;
+    color: var(--black-lt);
+    margin-bottom: 1rem;
+}
+.banner-content p{
+    margin: 1.5rem 0;
+}
+.navbar-toggler{
+    box-shadow: none !important;
+}
+/* =====================Banner End===================== */
+
+
+/* =====================Services===================== */
+section#services{
+    padding: 7rem 0;
+}
+.service-card-wrapper{
+    margin-top: 3rem;
+}
+.service-card{
+    padding: 2rem 1rem;
+}
+.service-card-active{
+    background: var(--primary);
+    padding: 2rem 1rem;
+    color: var(--white);
+    border-radius: 5px;
+    box-shadow: 5px 5px 50px #00000047;
+}
+.service-card h6{
+    font-weight: 800;
+    color: var(--black);
+    position: relative;
+    padding: 1rem 0;
+}
+.service-card-active h6{
+    font-weight: 800;
+    color: var(--white);
+    position: relative;
+    padding: 1rem 0;
+}
+.service-card h6::before{
+    content: '';
+    position: absolute;
+    left: 60%;
+    bottom: -1px;
+    width: 2rem;
+    height: 2px;
+    background: var(--primary);
+    transform: translateX(-50px);
+}
+.service-card-active h6::before{
+    content: '';
+    position: absolute;
+    left: 60%;
+    bottom: -1px;
+    width: 2rem;
+    height: 2px;
+    background: var(--white);
+    transform: translateX(-50px);
+}
+.service-card-active p{
+    color: var(--light);
+}
+/* =====================Services End===================== */
+
+
+/* =====================Portfolio===================== */
+#portfolio{
+    padding: 7rem 0;
+    background-color: var(--light);
+}
+.portfolio-img img{
+    width: 22rem;
+    height: 20rem;
+    object-fit: cover;
+}
+.portfolio-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-card .content{
+    background: linear-gradient(to top left, var(--light) 35px, var(--primary) 0);
+    width: 22rem;
+    height: 20rem;
+    color: var(--white);
+}
+.portfolio-card .content h6{
+    margin-top: 35%;
+}
+.portfolio-card .content h5{
+    font-weight: 600;
+    padding-bottom: 1rem;
+    position: relative;
+}
+.portfolio-card .content h5::before{
+    content: '';
+    position: absolute;
+    left: 60%;
+    bottom: -1px;
+    width: 2rem;
+    height: 1px;
+    background: var(--white);
+    transform: translateX(-50px);
+}
+
+/* =====================Portfolio End===================== */
+
+
+/* =====================call to action===================== */
+#call-to-action{
+    padding: 6rem 0;
+}
+#call-to-action div h2{
+    font-weight: 200;
+}
+#call-to-action div a{
+    margin-top: 2rem;
+}
+/* =====================call to action End===================== */
+
+
+
+/* =====================Testimonials===================== */
+
+#testimonials{
+    background: url(../img/testimonials.png), center;
+    background-size: cover;
+    padding: 7rem 0;
+}
+#testimonials h2{
+    font-weight: 300;
+    color: var(--black);
+    margin-bottom: 2rem;
+}
+
+#testimonials img.client-img{
+    border: 4px solid var(--white);
+    width: 5rem;
+    border-radius: 10rem;
+}
+
+#testimonials h5{
+    font-weight: 600;
+}
+#testimonials h6{
+    font-weight: 300;
+    font-size: small;
+}
+#testimonials p{
+    font-size: .8rem;
+    color: var(--black);
+    margin-top: 1rem;
+}
+/* =====================Testimonials End===================== */
+
+
+/* =====================Footer===================== */
+footer{
+    padding: 4rem 0;
+    padding-bottom: 0;
+}
+.footer-menu ul{
+    margin-top: .5rem;
+}
+.footer-menu ul li a{
+    text-decoration: none;
+    color: var(--black);
+}
+.footer-menu ul li{
+    list-style: none;
+    display: inline;
+    color: var(--black);
+    margin-right: 2rem;
+}
+/* footer search */
+
+.footer-search{
+    width: 18rem;
+    border: 1px solid var(--black-lt);
+    border-radius: 2rem;
+}
+.footer-search input,.footer-search input:focus{
+    border: none;
+    outline: none;
+    width: auto;
+    margin: .5rem 1.5rem;
+}
+
+/* footer social icon */
+
+.footer-icon{
+    margin: 4rem;
+}
+.footer-icon a img{
+    margin: 0 .5rem;
+    width: 2.5rem;
+    border-radius: 30rem;
+    transition: .3s;
+}
+.footer-icon a img:hover{
+    box-shadow: 1px 10px 20px var(--black-lt);
+    margin-top: -.8rem;
+}
+
+.copyright{
+    margin: 0 1rem;
+    border-top: 2px solid var(--light);
+    padding-top: 1rem;
+}
+.copyright p{
+    font-size: 1rem;
+}
+/* =====================Footer End===================== */
+
+
+
+
+
+
+
+
+
+
+
+
